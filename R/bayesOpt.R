@@ -336,7 +336,7 @@ bayesOpt <- function(
     )
     stop("Errors encountered in initialization are listed above.")
   } else {
-    scoreSummary <- rbindlist(scoreSummary)
+    scoreSummary <- rbindlist(scoreSummary,fill=T)
   }
 
   # Format scoreSummary table. Initial iteration is set to 0
